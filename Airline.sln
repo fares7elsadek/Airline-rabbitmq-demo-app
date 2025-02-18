@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35728.132
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Airline.API", "Airline.API\Airline.API.csproj", "{43EDC785-39C2-433A-9487-DE6189E4A569}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{34848BF2-6C43-4B29-929B-7A334E7CEE16}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirlineConsumer", "AirlineConsumer\AirlineConsumer.csproj", "{286510DD-B0FB-494B-A9DC-79AA27C8850C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43EDC785-39C2-433A-9487-DE6189E4A569}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43EDC785-39C2-433A-9487-DE6189E4A569}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43EDC785-39C2-433A-9487-DE6189E4A569}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43EDC785-39C2-433A-9487-DE6189E4A569}.Release|Any CPU.Build.0 = Release|Any CPU
+		{286510DD-B0FB-494B-A9DC-79AA27C8850C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{286510DD-B0FB-494B-A9DC-79AA27C8850C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{286510DD-B0FB-494B-A9DC-79AA27C8850C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{286510DD-B0FB-494B-A9DC-79AA27C8850C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

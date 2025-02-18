@@ -1,0 +1,34 @@
+version: "3.8"
+services:
+  airline-producer:
+    image: fareselsadek/airline-rabbitmq-app:latest
+    ports:
+     - 8080:8080
+    environment:
+      - RABBITMQ_DEFAULT_USER=user
+      - RABBITMQ_DEFAULT_PASS=password
+      - ASPNETCORE_ENVIRONMENT=Development
+    hostname: airline-producer
+    networks:
+      - airline-api-rabbitmq
+  rabbitmq:
+    image: rabbitmq:4.0.6-management-alpine
+    container_name: rabbitmq-container
+    environment:
+      - RABBITMQ_DEFAULT_USER=user
+      - RABBITMQ_DEFAULT_PASS=password
+      - Enviroment=Development
+    ports:
+      # rabbitmq instantce
+      - '5672:5672'
+      # web interface
+      - '15672:15672'
+    hostname: rabbitmq
+    networks:
+      - airline-api-rabbitmq
+  
+networks:
+  airline-api-rabbitmq:
+    driver: bridge  
+  
+   
